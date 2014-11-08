@@ -1,0 +1,13 @@
+.odd
+.even
+#someid
+#list1 .odd
+#list1 > .odd
+#list1 > .odd > .blah
+body
+ul.red
+ul:not(.blue)
+li:not(:first-child)
+
+li[class=odd]
+li[someattr=somevalue]

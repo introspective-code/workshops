@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Page</title>
+  <style>
+    li {
+      border-top: 1px solid blue;
+      border-left: 1px solid blue;
+      border-right: 1px solid blue;
+    }
+    li:last-child {
+      border-bottom: 1px solid blue;
+    }
+  </style>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".even:not(:last-child)").slideUp(function () {
+        $(".even").slideUp();
+      });
+    })
+  </script>
+</head>
+<body>
+  <h1>Some Header</h1>
+  <ul class="red" id="list1">
+    <li id="someid" class="odd">One</li>
+    <li class="even">Two</li>
+    <li class="odd">Three</li>
+    <li shahattr="somevalue" class="even">Four</li>
+  </ul>
+  <!-- <ul class="blue" id="list2">
+    <li class="odd">One</li>
+    <li class="even">Two</li>
+    <li class="odd"><span class="blah">Blah</span> Three</li>
+    <li class="even">Four</li>
+  </ul>
+  <ul class="red" id="list3">
+    <li class="odd">One</li>
+    <li class="even">Two</li>
+    <li class="odd"><span class="blah">Blah</span> Three</li>
+    <li class="even">Four</li>
+  </ul> -->
+
+  <button>Some Button</button>
+</body>
+</html>
